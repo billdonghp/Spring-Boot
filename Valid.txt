@@ -1,0 +1,27 @@
+public class Parameter {
+    
+	@NotEmpty(message="姓名不能为空")
+	private String name;
+	
+	@Min(value = 18, message = "年龄必须大于18岁")
+	private int age;
+	
+	@NotEmpty(message="hobbies不能为空")
+	private List<String> hobbies;
+	
+	@NotBlank(message="账号不能为空")
+	private String account;
+	
+	@Size(min=5,max=10,message="密码的长度应该在5和10之间") 
+	private String password;
+	
+	@Email(message="邮箱格式错误")
+	private String email;
+}
+
+public void get(@Valid User user, BindingResult bindingResult{
+	if(bindingResult.hasError()){
+		bindingResult.getFiledError().getDefaultMessage();
+	}
+	
+}

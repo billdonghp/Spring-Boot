@@ -1,0 +1,19 @@
+方式一:
+
+ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes)RequestContextHolder.getRequestAttributes();
+
+HttpServletRequest request = servletRequestAttributes.getRequest();
+
+HttpServletResponse response = servletRequestAttributes.getResponse();
+
+方式二:
+
+也可以在方法中可以注入,例如
+
+public String center(HttpServletRequest request,HttpServletResponse response) {...}
+
+方式三:
+
+@Autowired
+
+  private HttpServletRequest request;
