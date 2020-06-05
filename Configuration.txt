@@ -1,0 +1,9 @@
+1. handler instancef HandlerMethod   false
+
+2. 
+
+3. 	HandlerMethod handlerMethod = (HandlerMethod) handler;
+	Method method = handlerMethod.getMethod();
+	
+	
+3FHGzJi7FcjUpN2FGlJUFsRIUQavvYDaY2+7Qemz8geEFPRBfy8+pjgaBLVbHO56FmKel/W7DA0=
